@@ -26,4 +26,4 @@ Follow these steps:
 
 <br/>
 
-*Please see REACT-README.md for further information of React App (readme.md created by react when the app is created).*
+*Please see REACT-README.md for further information of React App (readme.md created by React when the app is created).*

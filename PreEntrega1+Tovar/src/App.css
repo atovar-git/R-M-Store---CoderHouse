@@ -1,0 +1,68 @@
+img {
+    width: 100%;
+}
+
+.landing {
+    /* background-image: url('https://images3.alphacoders.com/812/812062.png'); */
+    /* background-image: url('https://wallpaper.dog/large/16992087.png'); */
+    background-image: url('https://image.winudf.com/v2/image1/Y29tLndhbGxwYXBlcnM0a2hkX3JpY2tfbW9ydHlfd2FsbHBhcGVyc19zY3JlZW5fM18xNTg4MDkzOTg2XzAwMw/screen-3.jpg?fakeurl=1&type=.webp');
+    background-image: url('https://wallpapers.com/images/hd/rick-and-morty-under-the-sea-ocidh9za5jy6pao4-ocidh9za5jy6pao4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /*Indica el tamaño: -auto:original, -% o -contain para que ocupe el ancho del elemento*/
+    background-position: center; /*Cambia la posición de la imagen*/
+    background-color: rgba(0, 0, 0, .5); /*Haré un efecto oscurecer*/
+    background-blend-mode: darken; /*Realiza la mezcla de backgrounds*/
+}
+
+.feature-icons {
+    font-size: 3rem;
+}
+
+/* Grid setup */
+.cards-item {
+    max-width: 300px; /* Selecciono un max-width para que en resol bajas no sea tan grande - lo deseteo en resol altas */
+    margin-left: auto; /* Solo para centrarlo en resol bajas */
+    margin-right: auto; /* Solo para centrarlo en resol bajas */
+}
+
+/* Grid UNsetup para resol altas */
+@media (min-width: 575px) {
+    .cards-item {
+        max-width: unset;
+        margin-left: unset;
+        margin-right: unset;
+    }
+}
+
+.card-item {
+    transition: all .2s;      /*Animación*/
+}
+.card-item:hover {
+    transform: scale(1.025);   /*Aumentamos un poco su tamaño*/
+}
+
+.cart-item {
+    max-width: 300px;
+}
+
+@media (min-width: 768px) {
+    .cart-item {
+        max-width: unset;
+    }
+}
+
+.cart-item-img {
+    width: 125px;
+    border-radius: 50%;
+}
+
+.btn-seguir-comprando {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.btn-plus-minus {
+    padding: 0.05rem 0.35rem;
+    font-size: 0.8rem;
+}
