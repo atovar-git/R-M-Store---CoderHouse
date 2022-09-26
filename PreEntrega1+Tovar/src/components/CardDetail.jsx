@@ -3,8 +3,6 @@ import React from 'react';
 const CardDetail = () => {
     return (
         <>
-
-
             <main className='container my-3'>
 
                 <h4 className='fw-normal mb-3'>Detalle del producto</h4>
@@ -39,12 +37,8 @@ const CardDetail = () => {
                         </div>
                     </div>
 
-
                 </div>
             </main>
-
-
-
         </>
     );
 }
