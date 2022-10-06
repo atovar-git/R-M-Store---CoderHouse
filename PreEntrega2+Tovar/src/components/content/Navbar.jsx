@@ -48,7 +48,7 @@ const Navbar = () => {
                                 </ul>
                             </li>
                             <li className="nav-item me-xl-2">
-                                <a className="nav-link" href="#">Contacto</a>
+                                <Link className="nav-link" to="/contact">Contacto</Link>
                             </li>
                         </ul>
 

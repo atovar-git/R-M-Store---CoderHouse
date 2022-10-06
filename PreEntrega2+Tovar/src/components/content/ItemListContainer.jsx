@@ -21,17 +21,20 @@ const ItemListContainer = () => {
         <>
             <main className='container my-3'>
 
-                <h4 className='fw-normal mb-3'>Todas las Cards</h4>
-
                 {loaded ?
-                    // ItemList
-                    <ItemList products={products}/>
+                    <div>
+                        {/* Para que renderice al mismo tiempo que los items */}
+                        <h4 className='fw-normal mb-3'>Todas las Cards</h4>
+                        {/* ItemList */}
+                        <ItemList products={products}/>
+                    </div>
                     :
                     // Loader
                     <div className="loader-wrapper d-flex justify-content-center align-items-center mt-5">
                         <div className="loader"></div>
                     </div>
                 }
+                
             </main>
         </>
     );

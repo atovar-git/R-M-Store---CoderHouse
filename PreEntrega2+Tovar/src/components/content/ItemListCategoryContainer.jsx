@@ -31,7 +31,7 @@ const ItemListCategoryContainer = () => {
 
                 {loaded ?
                     <div>
-                        {/* Solo selecciono un elemento para ver su categoría */}
+                        {/* Para que renderice al mismo tiempo que los items. Solo selecciono un elemento para ver su categoría */}
                         <h4 className='fw-normal mb-3'>{products[0].species}s</h4>
                         
                         {/* ItemListContainer */}

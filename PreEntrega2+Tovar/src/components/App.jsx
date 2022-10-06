@@ -12,6 +12,7 @@ import ItemDetailContainer from './content/ItemDetailContainer';
 import Cart from './content/Cart';
 import Checkout from './content/Checkout';
 import ItemListCategoryContainer from './content/ItemListCategoryContainer';
+import Contact from './content/Contact';
 
 const App = () => {                                             // El componente es una función (en este caso es componente FUNCIONAL)
 
@@ -32,6 +33,7 @@ const App = () => {                                             // El componente
                         <Route path="/category/:id" element={<ItemListCategoryContainer />} />
                         <Route path="/cart" element={<Cart />} />
                         <Route path="/checkout" element={<Checkout />} />
+                        <Route path="/contact" element={<Contact />}/>
                     </Routes>
 
                     <Footer />

@@ -7,9 +7,9 @@ const Landing = () => {
         <>
             <main className='landing flex-grow-1 d-flex flex-column h-100'> {/*flex-grow-1 de esa forma la cita queda siempre abajo*/}
 
-                <div className="hero-box flex-grow-1 d-flex flex-column justify-content-center">
+                <div className="flex-grow-1 d-flex flex-column justify-content-center">
 
-                    <div className="hero-headings mt-3 text-center">
+                    <div className="mt-3 text-center">
                         <h1 className="display-1">R&M Store</h1>
                         <p className="lead fs-1">Colecciona las estampillas de la serie Rick y Morty</p>
                         <Link to="/item-list" className="btn btn-primary rounded-5 m-auto mt-3">Ir a la tienda</Link>

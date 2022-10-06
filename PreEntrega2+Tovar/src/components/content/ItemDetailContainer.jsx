@@ -27,11 +27,14 @@ const ItemDetailContainer = () => {
         <>
             <main className='container my-3'>
 
-                <h4 className='fw-normal mb-3'>Detalle del producto</h4>
 
                 {loaded ?
-                    // Item-detail
-                    <ItemDetail product={product}/>
+                    <div>
+                        {/* Para que renderice al mismo tiempo que los items */}
+                        <h4 className='fw-normal mb-3'>Detalle del producto</h4>
+                        {/* Item-detail */}
+                        <ItemDetail product={product}/>
+                    </div>
                     :
                     // Loader
                     <div className="loader-wrapper d-flex justify-content-center align-items-center mt-5">
