@@ -2,8 +2,8 @@
 
 import React from 'react';                                          // Nos permite crear componentes.
 import ReactDOM from 'react-dom/client';
-import './index.css';                                               // Importamos su CSS. Ojo que estos CSS afectan a toda la página (igualmente los CSS de los componentes internos tienen más jerarquía).
-import App from './App';                                            // IMPORTANTE, este es el COMPONENTE llamado App.
+import './styles/index.css';                                               // Importamos su CSS. Ojo que estos CSS afectan a toda la página (igualmente los CSS de los componentes internos tienen más jerarquía).
+import App from './components/App';                                            // IMPORTANTE, este es el COMPONENTE llamado App.
 
 const root = ReactDOM.createRoot(document.getElementById('root'));  // El id=root del HTML.
 root.render(

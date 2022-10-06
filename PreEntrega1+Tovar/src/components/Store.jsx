@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './StoreCard';
+import StoreCard from './StoreCard';
 
 const Store = () => {
 
@@ -55,7 +55,7 @@ const Store = () => {
                 {/* Cards-conteiner */}
                 <section className='row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-2 g-md-3'>
 
-                    {data.map((item, i) => <Card key={i} {...item} />)}
+                    {data.map((item, i) => <StoreCard key={i} {...item} />)}
 
                 </section>
                 {/* --Cards-conteiner */}

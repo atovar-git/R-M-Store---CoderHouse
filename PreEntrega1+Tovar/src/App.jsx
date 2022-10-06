@@ -1,9 +1,9 @@
-// Este App.js es un COMPONENTE, puede tener su propio css y su lógica. En sí un COMPONENTE es una función que retorna un bloque de HTML. Tenemos componentes de CLASE y FUNCIONALES, cada uno tienes sus diferencias.
+// Este App.js es un COMPONENTE, puede tener su propio css y su lógica. En sí un COMPONENTE es una función que retorna un bloque de HTML. Tenemos componentes de CLASE y FUNCIONALES, cada uno tiene sus diferencias.
 // Este App.js es RENDERIZADO por el index.js en donde es importado.
 
-import React from 'react';                      // Nos permite crear componentes
+import React from 'react';                      // Nos permite crear componentes.
 import './App.css'                              // Importamos su css.
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar';       // Importamos este COMPONENTE.
 import Footer from './components/Footer';
 import Store from './components/Store';
 import Landing from './components/Landing';
@@ -29,7 +29,6 @@ const App = () => {                             // El componente es una función
                 <Cart />
                 <Checkout />
 
-
                 <Footer />
 
             </div>
@@ -41,4 +40,4 @@ const App = () => {                             // El componente es una función
 
 export default App;
 
-// PARECE ser como EJS, donde ahora se usa {} para códig/variables de JS, y además las particiones que hacíamos de las vistas para reutilizar bloques HTML ahora serían los componentes.
+// PARECE ser como EJS, donde ahora se usa {} para código/variables de JS, y además las particiones que hacíamos de las vistas para reutilizar bloques HTML ahora serían los componentes.
