@@ -1,0 +1,26 @@
+<!DOCTYPE html>     <!-- Este archivo es el que se carga cuando el usuario ingresa a la página web. Tiene un UNICO DIV con id=root super importante y dentro de éste se inserta la app de React -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Titulo-->
+    <title>R&M - Store</title>
+    <!-- Icono en el browser -->
+    <link rel="icon" href="%PUBLIC_URL%/R-M_favicon.png" />     <!-- Ver que la carpeta publica se la llama como %PUBLIC_URL%. Si es una imagen usar: type="image/png" -->
+    <!-- FontAwesome Icons -->                                  <!-- Podemos agregar hojas de css y js externos, solo que serán globales. Podemos usar public también importando como %PUBLIC_URL% -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
+    <!-- Bootswatch CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.1/quartz/bootstrap.min.css" />
+    <!-- Otras hojas de estilo se encuentran vinculadas internamente, tienen más jerarquía -->
+</head>
+
+<body>
+    <div id="root"></div>       <!-- Vemos que este es el UNICO DIV en el cual se renderizará la página App. No cambiarle el id. Lo utiliza index.js -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+
+</html>

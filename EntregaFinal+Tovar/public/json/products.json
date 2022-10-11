@@ -1,0 +1,57 @@
+[
+    {
+        "id": 118,
+        "name": "Evil Morty",
+        "status": "Alive",
+        "idSpecies": 1,
+        "species": "Human",
+        "gender": "Male",
+        "image": "118.jpeg",
+        "stock": 10,
+        "price": 10
+    },
+    {
+        "id": 21,
+        "name": "Aqua Morty",
+        "status": "unknown",
+        "idSpecies": 2,
+        "species": "Humanoid",
+        "gender": "Male",
+        "image": "21.jpeg",
+        "stock": 15,
+        "price": 15
+    },
+    {
+        "id": 165,
+        "name": "Investigator Rick",
+        "status": "Dead",
+        "idSpecies": 1,
+        "species": "Human",
+        "gender": "Male",
+        "image": "165.jpeg",
+        "stock": 20,
+        "price": 20
+    },
+    {
+        "id": 254,
+        "name": "Octopus Man",
+        "status": "Alive",
+        "idSpecies": 2,
+        "species": "Humanoid",
+        "gender": "Male",
+        "image": "254.jpeg",
+        "stock": 25,
+        "price": 25
+    },
+    {
+        "id": 128,
+        "name": "Frankenstein's Monster",
+        "status": "Dead",
+        "idSpecies": 3,
+        "species": "Alien",
+        "gender": "Male",
+        "image": "128.jpeg",
+        "stock": 30,
+        "price": 30
+    }
+]
