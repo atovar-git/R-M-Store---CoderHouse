@@ -10,11 +10,11 @@ const Cart = () => {
 
     const [loaded, setLoaded] = useState(false);
     const [cartDetailList, setCartDetailList] = useState([]);
-    // Almaceno el total. Es un estado porque necesito que se re-rednderice junto a los otros elemenetos. Si es un variable JS esta se calcula correctamente al renderizar por el useEffect se pierde su valor.
+    // Almaceno el total. Es un estado porque necesito que se re-renderice junto a los otros elemenetos. Si es un variable JS esta se calcula correctamente al renderizar por el useEffect se pierde su valor.
     const [total, setTotal] = useState(0);
 
     // Leo el contexto (productos en el carrito)
-    const { cart } = useContext(CartContext);
+    const { cart, cleanCart } = useContext(CartContext);
 
     // Montaje + cada actualización de estado.
     useEffect(() => {
@@ -72,9 +72,9 @@ const Cart = () => {
                                 </div>
                                 <h4 className='fw-normal mb-3 text-center'>Total: ${total}</h4>
                                 <div className='d-sm-flex justify-content-center'>
-                                    <button type="button" className="btn btn-primary   col-10 col-sm-3 col-lg-2 d-block m-auto mx-sm-1 mb-1">Comprar</button>
-                                    <button type="button" className="btn btn-secondary col-10 col-sm-3 col-lg-1 d-block m-auto mx-sm-1 mb-1">Limpiar</button>
-                                    <button type="button" className="btn btn-outline-light col-10 col-sm-3 col-lg-2 d-block m-auto mx-sm-1 mb-1 btn-seguir-comprando">Seguir comprando</button>
+                                    <Link className="btn btn-primary   col-10 col-sm-3 col-lg-2 d-block m-auto mx-sm-1 mb-1">Comprar</Link>
+                                    <Link className="btn btn-secondary col-10 col-sm-3 col-lg-1 d-block m-auto mx-sm-1 mb-1" onClick={()=> cleanCart()}>Limpiar</Link>
+                                    <Link to='/item-list' className="btn btn-outline-light col-10 col-sm-3 col-lg-2 d-block m-auto mx-sm-1 mb-1 btn-seguir-comprando">Seguir comprando</Link>
                                 </div>
                             </div>
                             :

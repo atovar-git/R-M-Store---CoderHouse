@@ -43,6 +43,10 @@ const CartProvider = (props) => {                                     // Este pr
         console.log("Cart context: ", JSON.stringify(aux, 0, 4));
     }
 
+    const cleanCart = () => {
+        setCart([])
+    }
+
     const amountInCart = () => {
         return cart.reduce((acum, item) => acum = acum + item.amount, 0)
     }

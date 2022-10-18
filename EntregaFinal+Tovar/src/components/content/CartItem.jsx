@@ -56,8 +56,8 @@ const CartItem = (props) => {
                             <p className="card-text mb-0">Precio unitario: <span className='fw-bold'>${props.price}</span></p>
                             <p className="card-text mb-0">Subtotal: <span className='fw-bold'>${props.subTotal}</span></p>
                             <div className='d-flex'>
-                                <Link to={`/item/${props.id}`} className="btn btn-secondary btn-sm ms-auto me-1 d-block" data-attributes={props.id}>Editar</Link>
-                                <button className="btn btn-primary btn-sm d-block" data-attributes={props.id} onClick={() => deleteProductCart(props.id)}>Eliminar</button>
+                                <Link to={`/item/${props.id}`} className="btn btn-secondary btn-sm ms-auto me-1 d-block">Editar</Link>
+                                <button className="btn btn-primary btn-sm d-block" onClick={() => deleteProductCart(props.id)}>Eliminar</button>
                             </div>
                         </div>
                     </div>
