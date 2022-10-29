@@ -35,15 +35,15 @@ const CartItem = (props) => {
             <div className="card mb-3 col-lg-7 m-auto cart-item">
                 <div className="row g-0">
                     <div className="col-md-4 d-flex justify-content-center align-items-center p-2">
-                        <div><img src={`./img/${props.image}`} className="cart-item-img" /></div>
+                        <div><img src={props.image} className="cart-item-img" /></div>
                     </div>
                     <div className="col-md-8">
                         <div className="card-body p-2">
                             <div className="p-0 d-flex justify-content-between">
-                                <h5 className="card-title">{props.name}</h5><p className="card-text"><small className="text-muted">#{props.id}</small></p>
+                                <h5 className="card-title">{props.name}</h5><p className="card-text"><small className="text-muted">#{props.number}</small></p>
                             </div>
 
-                            <div className='text-end mb-1'><span className="badge bg-light rounded-pill">Stock {props.stock}</span></div>
+                            {/* <div className='text-end mb-1'><span className="badge bg-light rounded-pill">Stock {props.stock}</span></div> */}
                             <div className='d-flex justify-content-start align-items-center'>
                                 {/* <p className="card-tex mb-0 me-2">Cantidad:</p> */}
                                 <p className="card-tex mb-0">Cantidad:</p>

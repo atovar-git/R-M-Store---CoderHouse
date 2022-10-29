@@ -11,7 +11,7 @@ const Landing = () => {
 
                     <div className="mt-3 text-center">
                         <h1 className="display-1">R&M Store</h1>
-                        <p className="lead fs-1">Colecciona las estampillas de la serie Rick y Morty</p>
+                        <p className="lead fs-1">Colecciona las figuritas de la serie Rick y Morty</p>
                         <Link to="/item-list" className="btn btn-primary rounded-5 m-auto mt-3">Ir a la tienda</Link>
                     </div>
 

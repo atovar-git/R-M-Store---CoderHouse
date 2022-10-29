@@ -4,6 +4,7 @@ import { useEffect } from 'react';                                    // Hook pa
 import { useRef } from 'react';                                       // Hook para guardar valores pero su cambio de valor NO RE-RENDERIZARA el componente. Es como un state que no re-renderiza. Sirve también para acceder al DOM directamente (DOM REAL). 
 import { useContext } from 'react';                                   // Hook para acceder a los ESTADOS y FUNCIONES del contexto.
 import { CartContext } from '../../context/CartContext';              // Contexto el cual tiene sus estados y funciones.
+import { Link } from 'react-router-dom';                              // Para acceder a las rutas.
 
 const ItemDetail = (props) => {
 
@@ -50,7 +51,7 @@ const ItemDetail = (props) => {
                 <div className="col-md-6">
                     <div className="p-1 card col-9 m-auto">
                         {/* Cuidado con la ruta de la imagen cambia cuando uso url params */}
-                        <img src={`../img/${props.product.image}`} className="img-fluid rounded" />
+                        <img src={props.product.image} className="img-fluid rounded" />
                     </div>
                 </div>
 
@@ -59,7 +60,7 @@ const ItemDetail = (props) => {
                     <div className="card wrapper-card-body col-9 col-md-12 col-lg-9 m-auto m-lg-0">
                         <div className="card-body">
                             <div className="card-header p-0 d-flex justify-content-between">
-                                <h5 className="card-title">{props.product.name}</h5><p className="card-text"><small className="text-muted">#{props.product.id}</small></p>
+                                <h5 className="card-title">{props.product.name}</h5><p className="card-text"><small className="text-muted">#{props.product.number}</small></p>
                             </div>
                             <p className="card-text mt-2">Estado: {props.product.status}</p>
                             <p className="card-text mt-0">Tipo: {props.product.species}</p>
@@ -76,7 +77,11 @@ const ItemDetail = (props) => {
                                         <span className="badge bg-primary rounded-pill mx-2 px-2 fs-6">{amount}</span>
                                         <button type="button" className="btn btn-sm btn-outline-light btn-plus-minus" onClick={() => counter("add")}><i className="fa-solid fa-plus"></i></button>
                                     </div>
-                                    <button type="button" className="btn btn-primary mt-2 m-auto d-block col-12 col-md-9" onClick={() => addProductCart(props.product.id, amount, toastShow)}>Agregar al carrito</button>
+                                    <button type="button" className="btn btn-primary mt-2 m-auto d-block col-12 col-md-9" onClick={() => addProductCart(props.product, amount, toastShow)}>Agregar al carrito</button>
+                                    <div className="btn-group btn-group-sm d-flex mt-2 m-auto col-12 col-md-9">
+                                        <Link to="/cart" type="button" className="btn btn-outline-light rounded-0 rounded-start me-1"><i className="fa-solid fa-cart-shopping"></i></Link>
+                                        <Link to="/item-list" type="button" className="btn btn-outline-light rounded-0 rounded-end ms-1"><i className="fa-solid fa-shop"></i></Link>
+                                    </div>
                                 </div>
                                 :
                                 <button type="button" className="btn btn-primary mt-2 m-auto d-block col-12 col-md-9 disabled">Sin Stock</button>

@@ -11,7 +11,7 @@ import Landing from './content/Landing';
 import ItemDetailContainer from './content/ItemDetailContainer';
 import Cart from './content/Cart';
 import Checkout from './content/Checkout';
-import ItemListCategoryContainer from './content/ItemListCategoryContainer';
+import ItemListContainerByCategory from './content/ItemListContainerByCategory';
 import Contact from './content/Contact';
 import { CartProvider } from '../context/CartContext';          // Para poder usar context. Wrappeo la app (o componentes que vayan a usar el context).
 
@@ -31,7 +31,7 @@ const App = () => {                                             // El componente
                             <Route path="/" element={<Landing />} />
                             <Route path="/item-list" element={<ItemListContainer />} />
                             <Route path="/item/:id" element={<ItemDetailContainer />} />
-                            <Route path="/category/:id" element={<ItemListCategoryContainer />} />
+                            <Route path="/category/:id" element={<ItemListContainerByCategory />} />
                             <Route path="/cart" element={<Cart />} />
                             <Route path="/checkout" element={<Checkout />} />
                             <Route path="/contact" element={<Contact />} />

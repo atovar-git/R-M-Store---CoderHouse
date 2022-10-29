@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import ItemList from './ItemList';
-import { getProductsAPI } from '../../utils/getProductsAPI';
+import { getProductsDB } from '../../utils/firebase';
 
 const ItemListContainer = () => {
 
     const [products, setProducts] = useState([]);
     const [loaded, setLoaded] = useState(false);
 
-    // Montaje. Llamada a la promesa única vez.
+    // Montaje. Llamada a la BBDD única vez.
     useEffect(() => {
-        getProductsAPI()                // Función ya contiene el fetch y .json().
+        getProductsDB()                 // Fetch a BBDD.
             .then(data => { 
                 setProducts(data);      // Seteo estados y re-renderiza.
                 setLoaded(true);
@@ -24,7 +24,7 @@ const ItemListContainer = () => {
                 {loaded ?
                     <div>
                         {/* Para que renderice al mismo tiempo que los items */}
-                        <h4 className='fw-normal mb-3'>Todas las Cards</h4>
+                        <h4 className='fw-normal mb-3'>Todas las figuritas</h4>
                         {/* ItemList */}
                         <ItemList products={products}/>
                     </div>

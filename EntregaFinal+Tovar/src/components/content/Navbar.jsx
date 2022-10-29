@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';        // Para acceder a las rutas. Nav
 
 const Navbar = () => {
 
-    const cartValue = 10;
-
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
@@ -16,7 +14,7 @@ const Navbar = () => {
 
                     <div className="tools-wrapper d-flex">
                         {/* Carrito <lg */}
-                        <CartWidget style={'d-flex d-lg-none'} value={cartValue} />
+                        <CartWidget style={'d-flex d-lg-none'} />
                         {/* Toggler (navbar no expanded) */}
                         <button className="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02">
                             <span className="navbar-toggler-icon" />
@@ -27,10 +25,10 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarColor02">
 
                         {/* Form <lg */}
-                        <form className="d-flex d-lg-none mt-2 mt-lg-0 ">
+                        {/* <form className="d-flex d-lg-none mt-2 mt-lg-0">
                             <input className="form-control me-2" type="search" placeholder="Card..." />
                             <button className="btn btn-secondary" type="submit">Buscar</button>
-                        </form>
+                        </form> */}
 
                         <ul className="navbar-nav col-4 align-items-center m-auto m-lg-0">
                             <li className="nav-item me-xl-2">
@@ -53,13 +51,13 @@ const Navbar = () => {
                         </ul>
 
                         {/* Form >lg */}
-                        <form className="d-none d-lg-flex mt-1 mt-lg-0">
+                        {/* <form className="d-none d-lg-flex mt-1 mt-lg-0">
                             <input className="form-control px-2 rounded-1 me-2" type="search" placeholder="Card..." />
                             <button className="btn btn-secondary" type="submit">Buscar</button>
-                        </form>
+                        </form> */}
 
                         {/* Carrito >lg */}
-                        <CartWidget style={'d-none d-lg-flex'} value={cartValue} />
+                        <CartWidget style={'d-none d-lg-flex'} />
 
                     </div>
 

@@ -12,7 +12,7 @@ const CartWidget = (props) => {
     // Ver que ejecuto la función amountInCart inmediatamente cuando se renderiza.
     return (
         <>
-            {console.log("Re-rendericé NAVBAR")}
+            {/* {console.log("Re-rendericé NAVBAR")} */}
             <Link to='/cart' className={`${props.style} text-decoration-none ms-lg-auto justify-content-center align-items-center`}>
                 <i className="fa-solid fa-cart-shopping me-1 fs-5"></i>
                 {/* <span>{props.value}</span> */}

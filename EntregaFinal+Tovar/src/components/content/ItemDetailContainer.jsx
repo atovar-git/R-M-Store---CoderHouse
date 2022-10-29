@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';              // Hook para poder darle estados a los componentes FUNCIONALES (no de clase). Como las variables de una función se destruyen una vez ejecutadas, con useState puedo guardar sus valores y reimprimirlos en cada re-renderización. Cada CAMBIO DE ESTADO PROVOCA UNA RE-RENDERIZACION. Si fuera una variable normal puedo cambiarle su valor pero no se mostraría. Necesito re-renderizar el componente para mostrarlo pero perdería su valor en cada re-renderizado. En cambio, con useState se renderiza el nuevo valor.
 import { useEffect } from 'react';             // Hook para poder manejar el ciclo de vida de los componentes. Montaje, actualización y desmontaje. Ejecuta la función interna cuando se MONTE el componente, ACTUALICE algún estado/prop o DESMONTE. IMPORTANTE: CADA CAMBIO DE ESTADO RE-RENDERIZA EL COMPONENTE (debido al useState) por lo que useEffect PUEDE EJECUTARSE (dependiendo de la configuración del filtro de dependencias).
-import { getProductAPI } from '../../utils/getProductAPI';
+import { getProductDB } from '../../utils/firebase';
 import { useParams } from 'react-router-dom';  // Hook para poder CAPTURAR el parámetro de la URL.
 import ItemDetail from './ItemDetail';
 
@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
 
     // Montaje. Llamada a la promesa única vez.
     useEffect(() => {
-        getProductAPI(id)                      // Función ya contiene el fetch, .json() y find.
+        getProductDB(id)                      // Función ya contiene el fetch, .json() y find.
             .then(data => { 
                 setProduct(data);              // Seteo estados y re-renderiza.
                 setLoaded(true);
