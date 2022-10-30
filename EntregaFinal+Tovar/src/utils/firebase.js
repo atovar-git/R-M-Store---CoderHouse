@@ -3,7 +3,7 @@ import { collection, doc, addDoc, getFirestore, getDocs, getDoc, query, where } 
 
 // Configuración Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyBEH8rZhs4e_6pn379-1wte5ZafvKgjCN4",
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: "rym-store-b5dd0.firebaseapp.com",
     projectId: "rym-store-b5dd0",
     storageBucket: "rym-store-b5dd0.appspot.com",

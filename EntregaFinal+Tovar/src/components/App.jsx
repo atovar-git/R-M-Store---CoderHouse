@@ -17,8 +17,6 @@ import { CartProvider } from '../context/CartContext';          // Para poder us
 
 const App = () => {                                             // El componente es una función (en este caso es componente FUNCIONAL)
 
-    const saludo = 'Hello World';                               // Antes del RETURN puedo escribir código JS.
-
     return (                                                    // RETURN debe retornar UN SOLO bloque de código HTML: <>...</>. Esto es JSX: los class ahora son className, deben CERRARSE todas las etiquetas, se debe importar las imágenes para usarlas. LOS COMPONENTES importados se usan como si fueran etiquetas HTML. El código JS se realiza mediante {} (similar a EJS con <% %>).
         <>
             <CartProvider>
