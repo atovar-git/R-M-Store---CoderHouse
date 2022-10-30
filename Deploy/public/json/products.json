@@ -1,0 +1,57 @@
+[
+    {
+        "id": 118,
+        "name": "Evil Morty",
+        "status": "Alive",
+        "idSpecies": 1,
+        "species": "Human",
+        "gender": "Male",
+        "image": "https://firebasestorage.googleapis.com/v0/b/rym-store-b5dd0.appspot.com/o/118.jpeg?alt=media&token=fb4a4011-c117-4d45-a28b-600476481c22",
+        "stock": 10,
+        "price": 10
+    },
+    {
+        "id": 21,
+        "name": "Aqua Morty",
+        "status": "unknown",
+        "idSpecies": 2,
+        "species": "Humanoid",
+        "gender": "Male",
+        "image": "https://firebasestorage.googleapis.com/v0/b/rym-store-b5dd0.appspot.com/o/21.jpeg?alt=media&token=275e8c81-f626-4433-a8a3-1facc9631d91",
+        "stock": 15,
+        "price": 15
+    },
+    {
+        "id": 165,
+        "name": "Investigator Rick",
+        "status": "Dead",
+        "idSpecies": 1,
+        "species": "Human",
+        "gender": "Male",
+        "image": "https://firebasestorage.googleapis.com/v0/b/rym-store-b5dd0.appspot.com/o/165.jpeg?alt=media&token=381ea587-ca74-498e-9992-d2710389a02d",
+        "stock": 20,
+        "price": 20
+    },
+    {
+        "id": 254,
+        "name": "Octopus Man",
+        "status": "Alive",
+        "idSpecies": 2,
+        "species": "Humanoid",
+        "gender": "Male",
+        "image": "https://firebasestorage.googleapis.com/v0/b/rym-store-b5dd0.appspot.com/o/254.jpeg?alt=media&token=7502a3b7-877a-49fe-a56b-38d7a9d5f3cd",
+        "stock": 25,
+        "price": 25
+    },
+    {
+        "id": 128,
+        "name": "Frankenstein's Monster",
+        "status": "Dead",
+        "idSpecies": 3,
+        "species": "Alien",
+        "gender": "Male",
+        "image": "https://firebasestorage.googleapis.com/v0/b/rym-store-b5dd0.appspot.com/o/128.jpeg?alt=media&token=26e611e8-3d01-4ec1-8fcd-bf0a1bdce714",
+        "stock": 30,
+        "price": 30
+    }
+]
