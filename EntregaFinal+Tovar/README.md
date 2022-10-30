@@ -27,7 +27,7 @@ Follow these steps:
 
 ### Production 🔗
 
-* Not yet
+- https://rm-store.vercel.app
 
 ## Author ✒️
 
