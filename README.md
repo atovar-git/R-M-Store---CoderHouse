@@ -4,13 +4,22 @@
 
 ## About us 📖
 
-R&M Store is a digital store in Argentina were you can buy Rick and Morty pictures.
+>R&M Store is a digital store in Argentina were you can buy Rick and Morty pictures.
 We have hundreds of pictures that can be printed with an excellent quality.<br>
 We sell pictures across the country.<br>
 Our objetive is to provide our clients with the best products and the most comfortable way of shop.<br>
-You are able to surf inside our free application and find the pictures you were looking for. We have a wide variety of Rick and Morty characters.
-<br>Every week, we have lot of promotions and recommended articles for you.
+You are able to surf inside our free application and find the pictures you were looking for. We have a wide variety of Rick and Morty characters.<br>
+Every week, we have lot of promotions and recommended articles for you.
 We hope you enjoy this experience.
+
+## What you can do 👍
+
+* See the catalogue of our products.
+* Filter the products by category.
+* See product details.
+* Add the product to cart. Delete from cart. Change amount to buy.
+* Create a purchase order.
+* Contact us.
 
 ## Developer 🧑‍💻
 
@@ -26,6 +35,14 @@ We hope you enjoy this experience.
 ## Built with 🛠️
 
 * React JS
+* Firebase
+
+## Dependencies 📚
+
+* Bootswatch
+* Fontawesome
+* React JS
+* React Router Dom
 * Firebase
 
 ## Pre-requisites 📋
